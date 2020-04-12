@@ -1,4 +1,4 @@
-require('dotenv').config()
+if (process.env.NODE_ENV != 'production') require('dotenv').config()
 const express = require('express')
 const cors = require('cors')
 const mongoose = require('mongoose')
@@ -10,13 +10,15 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
-mongoose.connect(process.env.DB_URL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-}).then(() => console.log(`Connected to DB...`))
+mongoose
+    .connect(process.env.MONGODB_URL, {
+        useNewUrlParser: true,
+        useUnifiedTopology: true
+    })
+    .then(() => console.log(`Connected to MongoDB...`))
     .catch(err => console.log(err))
-const Contact = require('./contact.model')
 
+const Contact = require('./contact.model')
 
 
 app.get('/', (req, res) => {
@@ -36,7 +38,7 @@ app.get('/api/contact', async (req, res) => {
     if (req.headers["authorization"] != process.env.AUTH_TOKEN) return res.json({ status: "401", message: "Access Denied" })
     try {
         const contacts = await Contact.find()
-        res.status(200).json({ status: "200", message: "List of all the forms", response: contacts })
+        res.status(200).json({ status: "200", message: "List of all the forms", data: contacts })
     } catch (err) {
         console.log(err)
         res.status(500).send(`Internal Server Error`)
@@ -61,6 +63,4 @@ app.post('/api/contact', async (req, res) => {
 
 
 
-app.listen(PORT, () => {
-    console.log(`Server started on port ${PORT}...`)
-})
+app.listen(PORT, () => console.log(`${process.env.NODE_ENV != 'production' ? 'Development' : 'Production'} Server started on port ${PORT}...`))
