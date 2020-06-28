@@ -1,4 +1,4 @@
-if (process.env.NODE_ENV != 'production') require('dotenv').config()
+require('dotenv').config()
 const express = require('express')
 const cors = require('cors')
 const mongoose = require('mongoose')
@@ -20,7 +20,6 @@ mongoose
 
 const Contact = require('./contact.model')
 
-
 app.get('/', (req, res) => {
     res.redirect('https://ejekanshjain.github.io')
 })
@@ -35,32 +34,30 @@ app.get('/download', (req, res) => {
 })
 
 app.get('/api/contact', async (req, res) => {
-    if (req.headers["authorization"] != process.env.AUTH_TOKEN) return res.json({ status: "401", message: "Access Denied" })
+    if (req.headers['authorization'] != process.env.AUTH_TOKEN) return res.json({ status: 401, message: 'Access Denied' })
     try {
         const contacts = await Contact.find()
-        res.status(200).json({ status: "200", message: "List of all the forms", data: contacts })
+        res.status(200).json({ status: '200', message: 'List of all the forms', data: contacts })
     } catch (err) {
         console.log(err)
-        res.status(500).send(`Internal Server Error`)
+        res.status(500).send('Internal Server Error')
     }
 })
 
 app.post('/api/contact', async (req, res) => {
-    if (req.body.name == '' || req.body.email == '' || req.body.message == '' || !req.body.name || !req.body.email || !req.body.message) return res.status(400).json({ status: "400", message: "Must enter name, email and message fields" })
-    const contact = new Contact({
-        name: req.body.name,
-        email: req.body.email,
-        message: req.body.message
-    })
+    if (req.body.name == '' || req.body.email == '' || req.body.message == '' || !req.body.name || !req.body.email || !req.body.message)
+        return res.status(400).json({ status: '400', message: 'Must enter name, email and message fields!' })
     try {
-        const newContact = await contact.save()
-        res.status(201).json({ status: "201", message: "Submitted Successfully", response: newContact })
+        await Contact.create({
+            name: req.body.name,
+            email: req.body.email,
+            message: req.body.message
+        })
+        res.status(201).json({ status: '201', message: 'Submitted Successfully' })
     } catch (err) {
         console.log(err)
-        res.status(500).send(`Internal Server Error`)
+        res.status(500).send('Internal Server Error')
     }
 })
-
-
 
 app.listen(PORT, () => console.log(`${process.env.NODE_ENV != 'production' ? 'Development' : 'Production'} Server started on port ${PORT}...`))
