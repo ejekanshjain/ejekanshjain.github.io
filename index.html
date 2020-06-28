@@ -4,16 +4,856 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ekansh Jain</title>
+    <title>Ekansh</title>
+    <meta name="description" content="Ekansh Jain's Portfolio Website" />
+    <meta name="keywords" content="Ekansh Jain" />
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- Materialdesign icons CSS -->
+    <link rel="stylesheet" href="css/materialdesignicons.min.css">
+
+    <!-- Mobirise icons CSS -->
+    <link rel="stylesheet" href="css/mobiriseicons.css">
+
+    <!-- Magnific Popup CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate.min.css">
+
+    <!-- Owl Slider CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.css" />
+    <link rel="stylesheet" href="css/owl.theme.css" />
+    <link rel="stylesheet" href="css/owl.transitions.css" />
+
+    <!-- iziToast CSS -->
+    <link rel="stylesheet" href="css/iziToast.min.css">
+
+    <!-- Custom style CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <noscript>
-        Please Enable Javascript in your browser.
-    </noscript>
-    <script>
-        window.location = 'https://ejekanshjain.gitlab.io'
-    </script>
+
+    <!-- Start Pre Loader -->
+    <div id="preloader">
+        <div id="status">
+            <div class="spinner">Loading...</div>
+        </div>
+    </div>
+    <!-- END Pre Loader -->
+
+    <!-- START Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top custom-nav sticky">
+        <div class="container">
+            <!-- LOGO -->
+            <a class="navbar-brand logo animated fadeInDown" href="index.html">
+                <img src="images/logo.png" alt="" class="img-fluid logo-light">
+                <img src="images/logo-dark.png" alt="" class="img-fluid logo-dark">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="mdi mdi-menu"></i>
+            </button>
+            <div class="collapse navbar-collapse animated fadeInDown" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#education" class="nav-link">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#work" class="nav-link">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- END Navbar -->
+
+    <!--START Home-->
+    <section class="section h-100vh jarallax" data-jarallax='{"speed": 0.2}'
+        style="background-image: url('images/home-bg.jpg');" id="home">
+        <div class="bg-overlay"></div>
+        <div class="home-table">
+            <div class="home-table-center">
+                <div class="container position-relative z-index">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12 animated fadeInUp">
+                            <div class="text-white text-center">
+                                <h4>Hello there!</h4>
+                                <h1 class="header_title mb-0 mt-3">I Am <span class="element font-weight-bold"
+                                        data-elements="Ekansh Jain.,Full Stack Developer.,DevOps Engineer"></span></h1>
+                                <ul class="social_home list-unstyled text-center pt-4">
+                                    <li class="list-inline-item">
+                                        <a href="https://instagram.com/ejekanshjain">
+                                            <i class="mdi mdi-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="https://facebook.com/ejundertaker">
+                                            <i class="mdi mdi-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="https://linkedin.com/in/ejekanshjain">
+                                            <i class="mdi mdi-linkedin"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="https://github.com/ejekanshjain">
+                                            <i class="mdi mdi-github-box"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="https://twitter.com/ejekanshjain">
+                                            <i class="mdi mdi-twitter"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="header_btn">
+                                    <a href="https://ejekanshjain.herokuapp.com/download"
+                                        class="btn btn-outline-custom btn-rounded mt-4">Download CV</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll_down">
+            <a href="#about" class="scroll">
+                <i class="mbri-arrow-down text-white"></i>
+            </a>
+        </div>
+    </section>
+    <!--END Home-->
+
+    <!-- START About -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="text-center mx-auto section-main-title scroll-animate" data-animation="fadeInUp">
+                        <h2><span class="font-weight-bold">About </span>Me</h2>
+                        <div class="main-title-border">
+                            <i class="mdi mdi-asterisk"></i>
+                        </div>
+                        <p class="text-muted mx-auto mt-2">Enthusiastic Computer Science Engineer pursuing B. Tech (III
+                            Year) and looking for an internship and also interested in DevOps culture.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4 pt-4">
+                <div class="col-lg-12">
+                    <div class="scroll-animate" data-animation="lightSpeedIn">
+                        <img src="images/sign.png" alt="" class="img-fluid mx-auto d-block">
+                    </div>
+                    <div class="text-center about-detail mx-auto mt-5 scroll-animate" data-animation="rollIn">
+                        <h3 class="mb-3">Hey!
+                            <span class="font-weight-bold text-custom">Its Ekansh Jain.</span>
+                        </h3>
+                        <ul class="mb-0 list-inline text-center about-work">
+                            <li class="list-inline-item mr-0 text-muted">Full Stack Developer</li>
+                            <li class="list-inline-item mr-0 text-muted">DevOps Engineer/li>
+                            <li class="list-inline-item mr-0 text-muted">Gamer</li>
+                        </ul>
+                        <h3 class="mt-5">My Skills</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-6">
+                    <div class="progress-bars skill-custom">
+                        <div class="clearfix scroll-animate" data-animation="fadeInLeft">
+                            <div class="text-dark font-weight-bold float-left">Node.js</div>
+                            <div class="text-muted float-right">83%</div>
+                        </div>
+                        <div class="progress scroll-animate" data-animation="fadeInLeft" data-animation-delay="0.25s">
+                            <div class="progress-bar" role="progressbar" style="width: 83%" aria-valuenow="0"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="clearfix scroll-animate" data-animation="fadeInUp">
+                            <div class="text-dark font-weight-bold float-left">Mongo DB</div>
+                            <div class="text-muted float-right">63%</div>
+                        </div>
+                        <div class="progress scroll-animate" data-animation="fadeInUp" data-animation-delay="0.25s">
+                            <div class="progress-bar" role="progressbar" style="width: 63%" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="clearfix scroll-animate" data-animation="fadeInRight">
+                            <div class="text-dark font-weight-bold float-left">JavaSript</div>
+                            <div class="text-muted float-right">66%</div>
+                        </div>
+                        <div class="progress scroll-animate" data-animation="fadeInRight" data-animation-delay="0.25s">
+                            <div class="progress-bar" role="progressbar" style="width: 66%" aria-valuenow="0"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="clearfix scroll-animate" data-animation="fadeInDown">
+                            <div class="text-dark font-weight-bold float-left">HTML</div>
+                            <div class="text-muted float-right">74%</div>
+                        </div>
+                        <div class="progress scroll-animate" data-animation="fadeInDown" data-animation-delay="0.25s">
+                            <div class="progress-bar" role="progressbar" style="width: 74%" aria-valuenow="0"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="progress-bars skill-custom">
+                        <div class="clearfix scroll-animate" data-animation="fadeInDown">
+                            <div class="text-dark font-weight-bold float-left">Redis</div>
+                            <div class="text-muted float-right">70%</div>
+                        </div>
+                        <div class="progress scroll-animate" data-animation="fadeInDown" data-animation-delay="0.25s">
+                            <div class="progress-bar" role="progressbar" style="width:70%" aria-valuenow="0"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="clearfix scroll-animate" data-animation="fadeInRight">
+                            <div class="text-dark font-weight-bold float-left">React JS</div>
+                            <div class="text-muted float-right">65%</div>
+                        </div>
+                        <div class="progress scroll-animate" data-animation="fadeInRight" data-animation-delay="0.25s">
+                            <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="clearfix scroll-animate" data-animation="fadeInUp">
+                            <div class="text-dark font-weight-bold float-left">Cloud Computing</div>
+                            <div class="text-muted float-right">67%</div>
+                        </div>
+                        <div class="progress scroll-animate" data-animation="fadeInUp" data-animation-delay="0.25s">
+                            <div class="progress-bar" role="progressbar" style="width: 67%" aria-valuenow="0"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="clearfix scroll-animate" data-animation="fadeInLeft">
+                            <div class="text-dark font-weight-bold float-left">Data Structures</div>
+                            <div class="text-muted float-right">61%</div>
+                        </div>
+                        <div class="progress scroll-animate" data-animation="fadeInLeft" data-animation-delay="0.25s">
+                            <div class="progress-bar" role="progressbar" style="width: 61%" aria-valuenow="0"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-2">
+                <div class="col-lg-12">
+                    <p class="text-muted mt-3">Also my other skills are MuleSoft, SQL, PHP,
+                        Unreal Engine 4, Twilio, GitHub, GitLab, Google Cloud Platform, IBM Cloud.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END About -->
+
+    <!-- START Services -->
+    <section class="section bg-light" id="services">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="text-center mx-auto section-main-title scroll-animate" data-animation="fadeInUp">
+                        <h2>My <span class=" font-weight-bold">Services</span></h2>
+                        <div class="main-title-border">
+                            <i class="mdi mdi-asterisk"></i>
+                        </div>
+                        <p class="text-muted mx-auto mt-2"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4 pt-4">
+                <div class="col-lg-4">
+                    <div class="lan_box_ser text-center rounded p-4 mt-3 scroll-animate" data-animation="fadeInLeft">
+                        <div class=" ser_icon">
+                            <i class="mbri-globe-2"></i>
+                        </div>
+                        <div class="service-content mt-4">
+                            <h5 class="font-weight-bold">Web Services and Apis </h5>
+                            <p class="mt-3 text-muted mb-0">Building and Integrating fast, lightweight, scalable apis &
+                                web services using Node.js and MuleSoft.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="lan_box_ser text-center rounded p-4 mt-3 scroll-animate" data-animation="fadeInDown">
+                        <div class="ser_icon">
+                            <i class="mbri-database"></i>
+                        </div>
+                        <div class="service-content mt-4">
+                            <h5 class="font-weight-bold">Backend Development</h5>
+                            <p class="mt-3 text-muted mb-0">From Designing to Coding, developing backend for your
+                                appication also including database from SQL to NoSQL.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="lan_box_ser text-center rounded p-4 mt-3 scroll-animate" data-animation="fadeInRight">
+                        <div class="ser_icon">
+                            <i class="mbri-cloud"></i>
+                        </div>
+                        <div class="service-content mt-4">
+                            <h5 class="font-weight-bold">DevOps</h5>
+                            <p class="mt-3 text-muted mb-0">Build test and deploy cloud native appplications using
+                                latest automation tools. Less time for application to market.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-lg-4">
+                    <div class="lan_box_ser text-center rounded p-4 mt-3 scroll-animate" data-animation="fadeInLeft">
+                        <div class="ser_icon">
+                            <i class="mbri-sites"></i>
+                        </div>
+                        <div class="service-content mt-4">
+                            <h5 class="font-weight-bold">Web Development</h5>
+                            <p class="mt-3 text-muted mb-0">From creating websites to building its backend to its
+                                hosting.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="lan_box_ser text-center rounded p-4 mt-3 scroll-animate" data-animation="fadeInUp">
+                        <div class="ser_icon">
+                            <i class="mbri-video"></i>
+                        </div>
+                        <div class="service-content mt-4">
+                            <h5 class="font-weight-bold">Youtube Management</h5>
+                            <p class="mt-3 text-muted mb-0">Managing your youtube channel and helping it grow more
+                                rapidly. From uploads to premier, live stream and monetization.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="lan_box_ser text-center rounded p-4 mt-3 scroll-animate" data-animation="fadeInRight">
+                        <div class="ser_icon">
+                            <i class="mbri-play"></i>
+                        </div>
+                        <div class="service-content mt-4">
+                            <h5 class="font-weight-bold">Game Development</h5>
+                            <p class="mt-3 text-muted mb-0">Gamer by heart. Made some fun games during early days of
+                                engineering.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END Services -->
+
+    <!-- Start Funfacts -->
+    <section class="section bg-funfact scroll-animate" data-animation="rotateInDownRight">
+        <div class="bg-overlay"></div>
+        <div class="container">
+            <div class="row" id="counter">
+                <div class="col-lg-3">
+                    <div class="text-center lan_funfact p-4 mt-3 rounded text-white">
+                        <div class="lan_fun_icon mb-3">
+                            <i class="mbri-timer h1"></i>
+                        </div>
+                        <h1 class="lan_fun_value mb-1" data-count="372">0</h1>
+                        <p class="lan_fun_name mb-0">Working Hours</p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="text-center lan_funfact p-4 mt-3 rounded text-white">
+                        <div class="lan_fun_icon mb-3">
+                            <i class="mbri-gift h1"></i>
+                        </div>
+                        <h1 class="lan_fun_value mb-1" data-count="14">0</h1>
+                        <p class="lan_fun_name mb-0">Completed Projects</p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="text-center lan_funfact p-4 mt-3 rounded text-white">
+                        <div class="lan_fun_icon mb-3">
+                            <i class="mbri-user h1"></i>
+                        </div>
+                        <h1 class="lan_fun_value mb-1" data-count="1">0</h1>
+                        <p class="lan_fun_name mb-0">No. of Clients</p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="text-center lan_funfact p-4 mt-3 rounded text-white">
+                        <div class="lan_fun_icon mb-3">
+                            <i class="mbri-users h1"></i>
+                        </div>
+                        <h1 class="lan_fun_value mb-1" data-count="3">0</h1>
+                        <p class="lan_fun_name mb-0">Team Member</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END Funfacts -->
+
+    <!-- START Experience & Education -->
+    <section class="section" id="education">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="text-center mx-auto section-main-title scroll-animate" data-animation="fadeInUp">
+                        <h2><span class="font-weight-bold">Education & Experience</span></h2>
+                        <div class="main-title-border">
+                            <i class="mdi mdi-asterisk"></i>
+                        </div>
+                        <p class="text-muted mx-auto mt-2"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4 pt-4">
+                <div class="col-lg-5">
+                    <div class="cv_edu_exp mt-3">
+                        <div class="cv_edu_exp_box mt-4">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="cv_edu_exp_year font-weight-bold text-custom position-relative">2017 -
+                                        2021</div>
+                                    <div class="cb_edu_exp_detail scroll-animate" data-animation="fadeInLeft">
+                                        <h4>B.Tech in Computer Science</h4>
+                                        <p class="cv_desc mb-0">Studied From Techno INDIA NJR</p>
+                                        <p class="cv_desc mb-0">Till Now 70.6% with 0 backs</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cv_edu_exp_box mt-4">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="cv_edu_exp_year font-weight-bold text-custom position-relative">2016 -
+                                        2017</div>
+                                    <div class="cb_edu_exp_detail scroll-animate" data-animation="fadeInRight">
+                                        <h4>XII</h4>
+                                        <p class="cv_desc mb-0">Studied from St. Anthony School</p>
+                                        <p class="cv_desc mb-0">Scored 75.4%</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cv_edu_exp_box mt-4">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="cv_edu_exp_year font-weight-bold text-custom position-relative">2014 -
+                                        2015</div>
+                                    <div class="cb_edu_exp_detail scroll-animate" data-animation="fadeInLeft">
+                                        <h4>X</h4>
+                                        <p class="cv_desc mb-0">Studied from St. Anthony School</p>
+                                        <p class="cv_desc mb-0">Secured 7.8 CGPA</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 offset-lg-2">
+                    <div class="cv_edu_exp mt-3">
+                        <div class="cv_edu_exp_box mt-4">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="cv_edu_exp_year font-weight-bold text-custom position-relative">2019 -
+                                        present</div>
+                                    <div class="cb_edu_exp_detail scroll-animate" data-animation="fadeInRight">
+                                        <h4>Node JS Developer @Amigos</h4>
+                                        <p class="cv_desc mb-0">Started freelancing with Amigos</p>
+                                        <p class="cv_desc mb-0">Creating and Integrating Web Services and APIs for web &
+                                            mobile apps using Node.js, MySQL and MongoDB. Also kinda into some of web
+                                            development.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cv_edu_exp_box mt-4">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="cv_edu_exp_year font-weight-bold text-custom position-relative">2017 -
+                                        2019</div>
+                                    <div class="cb_edu_exp_detail scroll-animate" data-animation="fadeInLeft">
+                                        <h4>Game Developer</h4>
+                                        <p class="cv_desc mb-0">Making awesome PC/Console games.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END Experience & Education -->
+
+    <!-- START CTA -->
+    <section class="section bg-cta scroll-animate" data-animation="rotateInUpLeft">
+        <div class="bg-overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-center text-white">
+                        <h1>I Am Available to be Hired.</h1>
+                        <div class="mt-4">
+                            <a href="https://www.linkedin.com/in/ejekanshjain" class="btn btn-outline-custom">Hire
+                                Me!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END CTA -->
+
+    <!--START Work -->
+    <section class="section text-center" id="work">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="text-center mx-auto section-main-title scroll-animate" data-animation="fadeInUpBig">
+                        <h2>My <span class="font-weight-bold">Work</span></h2>
+                        <div class="main-title-border">
+                            <i class="mdi mdi-asterisk"></i>
+                        </div>
+                        <p class="text-muted mx-auto mt-2">Here are some of my work.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-12 scroll-animate" data-animation="lightSpeedIn">
+                    <ul class="text-center list-unstyled list-inline mb-0 text-capitlize work_menu" id="menu-filter">
+                        <li class="list-inline-item"><a class="active" data-filter="*">All</a></li>
+                        <li class="list-inline-item"><a class="" data-filter=".apis">Apis</a></li>
+                        <li class="list-inline-item"><a class="" data-filter=".game">Game</a></li>
+                        <li class="list-inline-item"><a class="" data-filter=".web">Web</a></li>
+                        <li class="list-inline-item"><a class="" data-filter=".android">Android</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-5 work-filter scroll-animate" data-animation="fadeInDown">
+                <div class="col-lg-4 web apis">
+                    <div class="work_img_box rounded">
+                        <a href="https://github.com/ejekanshjain/task-management-system-backend" target="_blank"></a>
+                        <div class="work_images">
+                            <img src="images/works/12.png" alt="image" class="img-fluid mx-auto d-block">
+                            <div class="work_overlay">
+                                <h4>May 2020</h4>
+                                <h6>Taskify</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 web apis">
+                    <div class="work_img_box rounded">
+                        <a href="https://github.com/ejekanshjain/my-passbook" target="_blank"></a>
+                        <div class="work_images">
+                            <img src="images/works/11.png" alt="image" class="img-fluid mx-auto d-block">
+                            <div class="work_overlay">
+                                <h4>Apr 2020</h4>
+                                <h6>My Passbook</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 web android apis">
+                    <div class="work_img_box rounded">
+                        <a href="https://github.com/ejekanshjain/covid19-quarantine-tracker" target="_blank"></a>
+                        <div class="work_images">
+                            <img src="images/works/10.png" alt="image" class="img-fluid mx-auto d-block">
+                            <div class="work_overlay">
+                                <h4>Mar 2020</h4>
+                                <h6>Quarguard</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 web apis">
+                    <div class="work_img_box rounded">
+                        <a class="img-zoom" href="images/works/9.jpg"></a>
+                        <div class="work_images">
+                            <img src="images/works/9.jpg" alt="image" class="img-fluid mx-auto d-block">
+                            <div class="work_overlay">
+                                <h4>Dec 2019 - Mar 2020</h4>
+                                <h6>PAMS</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 web">
+                    <div class="work_img_box rounded">
+                        <a href="https://github.com/ejekanshjain/url-shortener" target="_blank"></a>
+                        <div class="work_images">
+                            <img src="images/works/8.jpg" alt="image" class="img-fluid mx-auto d-block">
+                            <div class="work_overlay">
+                                <h4>Mar 2020</h4>
+                                <h6>URL Shortener</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 web">
+                    <div class="work_img_box rounded">
+                        <a href="https://github.com/ejekanshjain/love-calculator" target="_blank"></a>
+                        <div class="work_images">
+                            <img src="images/works/7.jpg" alt="image" class="img-fluid mx-auto d-block">
+                            <div class="work_overlay">
+                                <h4>Feb 2020</h4>
+                                <h6>Love Calculator</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 web apis">
+                    <div class="work_img_box rounded">
+                        <a href="https://github.com/ejekanshjain/blog-app" target="_blank"></a>
+                        <div class="work_images">
+                            <img src="images/works/6.jpg" alt="image" class="img-fluid mx-auto d-block">
+                            <div class="work_overlay">
+                                <h4>Feb 2020</h4>
+                                <h6>Blog App</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 apis">
+                    <div class="work_img_box rounded">
+                        <a href="https://github.com/ejekanshjain/sih-ccm-2020-rest-api" target="_blank"></a>
+                        <div class="work_images">
+                            <img src="images/works/5.jpg" alt="image" class="img-fluid mx-auto d-block">
+                            <div class="work_overlay">
+                                <h4>Jan 2020 NodeJS</h4>
+                                <h6>SIH 2020 CCM</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 web">
+                    <div class="work_img_box rounded">
+                        <a href="https://github.com/ejekanshjain/Realtime-Chat-App" target="_blank"></a>
+                        <div class="work_images">
+                            <img src="images/works/4.jpg" alt="image" class="img-fluid mx-auto d-block">
+                            <div class="work_overlay">
+                                <h4>Jan 2020 Socket.io</h4>
+                                <h6>Realtime Chat Application</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 game">
+                    <div class="work_img_box rounded">
+                        <a class="img-zoom" href="images/works/3.jpg"></a>
+                        <div class="work_images">
+                            <img src="images/works/3.jpg" alt="image" class="img-fluid mx-auto d-block">
+                            <div class="work_overlay">
+                                <h4>June 2019 UE4</h4>
+                                <h6>Horror Survival Game</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 game">
+                    <div class="work_img_box rounded">
+                        <a href="https://github.com/ejekanshjain/Endless-Runner-Game" target="_blank"></a>
+                        <div class="work_images">
+                            <img src="images/works/2.jpg" alt="image" class="img-fluid mx-auto d-block">
+                            <div class="work_overlay">
+                                <h4>Oct 2018 UE4</h4>
+                                <h6>Endless Runner Game</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 game">
+                    <div class="work_img_box rounded">
+                        <a href="https://github.com/ejekanshjain/Hackathon-4.0" target="_blank"></a>
+                        <div class="work_images">
+                            <img src="images/works/1.jpg" alt="image" class="img-fluid mx-auto d-block">
+                            <div class="work_overlay">
+                                <h4>Mar 2018 AR|Unity</h4>
+                                <h6>Text To Object</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--END Work -->
+
+    <!-- START Contact Form -->
+    <section class="section" id="contact">
+        <div class="container scroll-animate" data-animation="fadeInUp">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="text-center mx-auto section-main-title">
+                        <h2>Get In <span class="font-weight-bold">Touch</span></h2>
+                        <div class="main-title-border">
+                            <i class="mdi mdi-asterisk"></i>
+                        </div>
+                        <p class="text-muted mx-auto mt-2">Usually I reply in less than a day.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4 pt-4">
+                <div class="col-lg-4">
+                    <div class="text-center mt-4">
+                        <div>
+                            <a href="tel:+919530077351">
+                                <i class="mbri-mobile2 text-custom h2"></i>
+                            </a>
+                        </div>
+                        <div class="mt-2">
+                            <p class="mb-0 font-weight-bold">Call Me On</p>
+                            <p class="text-muted">+91 9530077351</p>
+                        </div>
+                    </div>
+                    <div class="text-center mt-4">
+                        <div>
+                            <a href="mailto:ejekanshjain@gmail.com">
+                                <i class="mbri-letter text-custom h2"></i>
+                            </a>
+                        </div>
+                        <div class="mt-2">
+                            <p class="mb-0 font-weight-bold">Email Me At</p>
+                            <p class="text-muted">ejekanshjain@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="contact_form">
+                        <form>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group mt-2">
+                                        <label for="name" class="font-weight-bold">Name</label>
+                                        <input name="name" id="name" type="text" class="form-control"
+                                            placeholder="Your name..." required="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group mt-2">
+                                        <label for="email" class="font-weight-bold">Email</label>
+                                        <input name="email" id="email" type="email" class="form-control"
+                                            placeholder="Your email..." required="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group mt-2">
+                                        <label for="comments" class="font-weight-bold">Message</label>
+                                        <textarea name="comments" id="comments" rows="4" class="form-control"
+                                            placeholder="Your message..." required=""></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 text-right">
+                                    <input type="submit" id="contact-button" class="btn btn-custom" value="Send Message">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END Contact Form -->
+
+    <!-- START Footer -->
+    <section class="bg-light">
+        <div class="container">
+            <div class="row pt-4 pb-4">
+                <div class="col-lg-12">
+                    <div class="float-left float_none mt-2 mb-2">
+                        <p class="copy-rights text-muted mb-0">
+                            <script>document.write(new Date().getFullYear() + ' ')</script>
+                            &copy; Made with <i class="mdi mdi-heart-outline" id="love"></i> by Ekansh.
+                        </p>
+                    </div>
+                    <div class="float-right float_none mt-2 mb-2">
+                        <ul class="list-inline fot_social mb-0">
+                            <li class="list-inline-item">
+                                <a href="https://instagram.com/ejekanshjain" class="social-icon text-muted">
+                                    <i class="mdi mdi-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://facebook.com/ejundertaker" class="social-icon text-muted">
+                                    <i class="mdi mdi-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://linkedin.com/in/ejekanshjain" class="social-icon text-muted">
+                                    <i class="mdi mdi-linkedin"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://github.com/ejekanshjain" class="social-icon text-muted">
+                                    <i class="mdi mdi-github-circle"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://twitter.com/ejekanshjain" class="social-icon text-muted">
+                                    <i class="mdi mdi-twitter"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END Footer -->
+
+    <!-- Back To Top -->
+    <a href="#" class="back_top"> <i class="mbri-arrow-up"> </i> </a>
+
+
+    <!-- JavaSripts Imports -->
+    <!-- JQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Easing JS -->
+    <script src="js/jquery.easing.min.js"></script>
+    <!-- Waypoint JS -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <!-- Scrollspy JS -->
+    <script src="js/scrollspy.min.js"></script>
+    <!-- Typed JS -->
+    <script src="js/typed.js"></script>
+    <!-- Magnific Popup JS -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- Isotope JS -->
+    <script src="js/isotope.js"></script>
+    <!-- Particles JS -->
+    <script src="js/particles.js"></script>
+    <script src="js/particles.app.js"></script>
+    <!-- Parllax JS -->
+    <script src="js/parallax.js"></script>
+    <!-- OWL Carousel JS -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- iziToast JS -->
+    <script src="js/iziToast.min.js"></script>
+    <!-- Custom Script JS -->
+    <script src="js/script.js"></script>
 </body>
 
 </html>
