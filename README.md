@@ -18,6 +18,6 @@ Keep private repository links out of the catalogue.
 
 ## Deployment
 
-The GitHub Actions workflow builds and deploys pushes to `master`.
+The GitHub Actions workflow builds and deploys pushes to `main`.
 Choose **GitHub Actions** under **Settings > Pages > Build and Deployment > Source** in your repository.
 The site publishes at https://ejekanshjain.github.io.
