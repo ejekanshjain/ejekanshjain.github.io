@@ -67,6 +67,36 @@ export const projects: Project[] = [
     demo: 'https://financial-planner-teal-delta.vercel.app'
   },
   {
+    name: 'Nail Jelly to a Wall',
+    directory: 'nail-jelly',
+    tags: ['Game'],
+    description:
+      'Make jelly, carry it down the hall, and nail 60 blocks to a wall that keeps sagging.',
+    openSource: true,
+    repository: 'https://github.com/ejekanshjain/nail-jelly',
+    demo: 'https://nail-jelly.vercel.app'
+  },
+  {
+    name: '10,000 Beans',
+    directory: 'ten-thousand-beans',
+    tags: ['Game'],
+    description:
+      'Carry a pot of 10,000 beans across town to Grandma and pick up every bean you spill.',
+    openSource: true,
+    repository: 'https://github.com/ejekanshjain/ten-thousand-beans',
+    demo: 'https://ten-thousand-beans.vercel.app'
+  },
+  {
+    name: 'Water in a Sieve',
+    directory: 'water-in-a-sieve',
+    tags: ['Game'],
+    description:
+      'Fill a bathtub using only a sieve. Every shaky move of your mouse or phone spills water.',
+    openSource: true,
+    repository: 'https://github.com/ejekanshjain/water-in-a-sieve',
+    demo: 'https://water-in-a-sieve.vercel.app'
+  },
+  {
     name: 'Fern',
     directory: 'Fern',
     tags: ['iOS App'],
