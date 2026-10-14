@@ -97,6 +97,16 @@ export const projects: Project[] = [
     demo: 'https://water-in-a-sieve.vercel.app'
   },
   {
+    name: 'Greener on the Other Side',
+    directory: 'greener-on-the-other-side',
+    tags: ['Game'],
+    description:
+      'Grow a better lawn than your neighbour in 3 minutes. Throw every weed, snail and gnome over the fence.',
+    openSource: true,
+    repository: 'https://github.com/ejekanshjain/greener-on-the-other-side',
+    demo: 'https://greener-on-the-other-side.vercel.app'
+  },
+  {
     name: 'Fern',
     directory: 'Fern',
     tags: ['iOS App'],

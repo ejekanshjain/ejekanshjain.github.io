@@ -1,6 +1,6 @@
 # Ekansh Jain's Projects
 
-Browse 25 projects with search, tag filters, and light and dark themes.
+Browse 26 projects with search, tag filters, and light and dark themes.
 The site uses Astro, TypeScript, Tailwind CSS, and Bun.
 Press `D` to switch themes when you are not typing or choosing a tag.
 
