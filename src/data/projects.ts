@@ -6,6 +6,7 @@ export interface Project {
   openSource: boolean
   repository?: string
   demo?: string
+  demoLabel?: string
   fork?: boolean
 }
 
@@ -105,6 +106,25 @@ export const projects: Project[] = [
     openSource: true,
     repository: 'https://github.com/ejekanshjain/greener-on-the-other-side',
     demo: 'https://greener-on-the-other-side.vercel.app'
+  },
+  {
+    name: '5 in a Row',
+    directory: 'five-in-a-row',
+    tags: ['Game'],
+    description:
+      'Line up five discs before your friend does. Use a hammer, gravity flip, or four-in-a-row power-up once per round.',
+    openSource: true,
+    repository: 'https://github.com/ejekanshjain/five-in-a-row'
+  },
+  {
+    name: 'Statclock',
+    directory: 'yt-thing',
+    tags: ['YouTube Channel'],
+    description:
+      'Watch a new bar chart race every day showing how countries rank on GDP, population, energy, and more.',
+    openSource: false,
+    demo: 'https://www.youtube.com/channel/UCIUPTxIiN5HYfKGhUGdgs2g',
+    demoLabel: 'YouTube'
   },
   {
     name: 'Fern',
@@ -246,7 +266,7 @@ export const projects: Project[] = [
     directory: 'twilight-halo',
     tags: ['Web App', 'SaaS'],
     description:
-      'Manage restaurant menus, table orders, staff, invoices, and payments in one place.',
+      'Manage restaurant menus, table orders, staff, invoices, and payments in one place. Connect AI tools to read your restaurant data.',
     openSource: false,
     demo: 'https://www.grubbitt.com'
   }
