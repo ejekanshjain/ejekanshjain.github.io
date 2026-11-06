@@ -114,7 +114,8 @@ export const projects: Project[] = [
     description:
       'Line up five discs before your friend does. Use a hammer, gravity flip, or four-in-a-row power-up once per round.',
     openSource: true,
-    repository: 'https://github.com/ejekanshjain/five-in-a-row'
+    repository: 'https://github.com/ejekanshjain/five-in-a-row',
+    demo: 'https://five-in-a-row-three.vercel.app'
   },
   {
     name: 'Statclock',
@@ -123,7 +124,7 @@ export const projects: Project[] = [
     description:
       'Watch a new bar chart race every day showing how countries rank on GDP, population, energy, and more.',
     openSource: false,
-    demo: 'https://www.youtube.com/channel/UCIUPTxIiN5HYfKGhUGdgs2g',
+    demo: 'https://www.youtube.com/@Statclock',
     demoLabel: 'YouTube'
   },
   {
