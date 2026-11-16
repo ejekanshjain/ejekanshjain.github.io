@@ -118,6 +118,16 @@ export const projects: Project[] = [
     demo: 'https://five-in-a-row-three.vercel.app'
   },
   {
+    name: 'Island Flyer',
+    directory: 'flight-sim',
+    tags: ['Game'],
+    description:
+      'Fly 11 aircraft, from a Cessna to Concorde, through 23 missions over a generated island.',
+    openSource: true,
+    repository: 'https://github.com/ejekanshjain/flight-sim',
+    demo: 'https://flight-sim-ten-blue.vercel.app'
+  },
+  {
     name: 'Statclock',
     directory: 'yt-thing',
     tags: ['YouTube Channel'],
