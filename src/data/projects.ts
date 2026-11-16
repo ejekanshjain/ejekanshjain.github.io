@@ -118,7 +118,7 @@ export const projects: Project[] = [
     demo: 'https://five-in-a-row-three.vercel.app'
   },
   {
-    name: 'Island Flyer',
+    name: 'Flight Simulator',
     directory: 'flight-sim',
     tags: ['Game'],
     description:
